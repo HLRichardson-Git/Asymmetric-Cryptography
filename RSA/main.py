@@ -9,6 +9,7 @@ def encrypt(x, e, n):
 def decrypt(y, d, n):
     return pow(y, d, n)
 
+
 def main():
     k = Key()
     
@@ -18,8 +19,6 @@ def main():
 
     plaintext_message = decrypt(ciphertext_message, k.d, k.n)
     print("Decrypted plaintext: " + str(plaintext_message))
-
-
 
 if __name__ == '__main__':
     main()
